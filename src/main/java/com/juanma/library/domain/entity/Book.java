@@ -9,7 +9,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Document(collation = "Libros")
+@Document(collection = "Libros")
 public class Book {
     @Id
     private String id;
@@ -18,7 +18,7 @@ public class Book {
     private String genero;
     private String editorial;
     private String anio_publicacion;
-    private Integer sinopsis;
+    private String sinopsis;
     private String disponible;
 
 
